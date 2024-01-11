@@ -1,0 +1,15 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Name",
+                    "entity_id": "Sensor to lag",
+                    "delay_time": "Lag time"
+                },
+                "description": "Set sensor to lag to the entity which need to be lagged. The lag time is the time to delay the value change.",
+                "title": "Configure lag sensor"
+            }
+        }
+    }
+}
