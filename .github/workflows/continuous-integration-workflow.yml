@@ -1,0 +1,20 @@
+name: CI
+on:
+  push: 
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  linters:
+    name: Linters
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        id: setup-python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+      - run: pip3 install homeassistant
+      - run: pip3 install ruff
+      - run: ruff check ./custom_components/lag_sensor
