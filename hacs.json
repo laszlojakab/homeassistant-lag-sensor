@@ -1,0 +1,6 @@
+{
+  "name": "Lag sensor integration",
+  "render_readme": true,
+  "zip_release": true,
+  "filename": "homeassistant-lag-sensor.zip"
+}
