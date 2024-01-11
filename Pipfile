@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+pytest = "==7.*"
+pytest-cov = "*"
+ruff = "*"
+black = "*"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+# Linting
+lint = "ruff check ./custom_components/lag_sensor"
+# Testing
+test = "pytest ./custom_components/lag_sensor/tests --cov=lag_sensor --cov-report xml --cov-report term"
+# Formatting
+format = "black ."
+format-check = "black . --check"
