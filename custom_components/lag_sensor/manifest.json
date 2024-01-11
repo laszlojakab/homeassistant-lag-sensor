@@ -1,0 +1,12 @@
+{
+  "domain": "lag_sensor",
+  "name": "Lag sensor",
+  "codeowners": ["@laszlojakab"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/laszlojakab/homeassistant-lag-sensor#usage",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/laszlojakab/homeassistant-lag-sensor/issues",
+  "requirements": [],
+  "version": "0.0.1"
+}
