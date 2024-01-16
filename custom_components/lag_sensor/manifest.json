@@ -1,6 +1,7 @@
 {
   "domain": "lag_sensor",
   "name": "Lag sensor",
+  "after_dependencies": ["recorder"],
   "codeowners": ["@laszlojakab"],
   "config_flow": true,
   "dependencies": [],
